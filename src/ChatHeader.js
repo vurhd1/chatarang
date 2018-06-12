@@ -4,7 +4,7 @@ const ChatHeader  = () => {
     return(
         <div className='ChatHeader'>
             <header className="ChatHeader">
-                <div class="roomInfo">
+                <div className="roomInfo">
                     <h2>#general</h2>
                     <p>Announcements and general chat</p>
                 </div>
