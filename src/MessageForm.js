@@ -8,6 +8,7 @@ const MessageForm = () =>{
                 name='body'
                 placeholder='Type a message...'
             />
+            {/* <button>Send</Button> */}
         </form>
     )
 }
