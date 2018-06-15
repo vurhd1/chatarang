@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Message = (props) =>{
+const UserInfo = (props) =>{
     return(
         <div className="Message" style={styles.message}>
         <div
@@ -22,16 +22,16 @@ const Message = (props) =>{
 var styles = {
 
     //.Message
-        message: {
-                display: "flex",
-                marginTop: "1rem",
-                padding: "0 1rem"
-        },
+    message: {
+            display: "flex",
+            marginTop: "1rem",
+            padding: "0 1rem"
+    },
     //.Message .details
-        messageDetails: {
-                flex: "1",
-                paddingLeft: "0.5rem"
-        }
+    messageDetails: {
+            flex: "1",
+            paddingLeft: "0.5rem"
     }
+}
 
-export default Message
+export default UserInfo
