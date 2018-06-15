@@ -3,7 +3,7 @@ import React from 'react'
 const Avatar = () => {
     return(
         <div
-            class="Avatar"
+            className="Avatar"
             style={styles}
         ></div>
     )

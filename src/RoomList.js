@@ -5,7 +5,7 @@ const RoomList = () => {
         <nav className="RoomList">
             <h2 style={styles.roomListh2}>Rooms</h2>
             <ul style={styles.roomListul}>
-                <li style={styles.roomListli}><a href="#">general</a></li>
+                <li style={styles.roomListli}><a href="#" style={styles.roomListlia}>general</a></li>
                 <li style={styles.roomListli}><a href="#" style={styles.roomListlia}>random</a></li>
             </ul>
         </nav>
