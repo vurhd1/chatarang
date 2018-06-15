@@ -9,9 +9,8 @@ class Main extends Component{
             <div className='Main' style={styles}>
                 <Sidebar 
                     user={this.props.user}
-                    signOut={this.props.signOut}
                 />
-                <Chat />
+                <Chat user={this.props.user}/>
             </div>
         )
     }
