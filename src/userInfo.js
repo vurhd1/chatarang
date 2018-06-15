@@ -1,37 +1,50 @@
 import React from 'react'
 
+import Avatar from './Avatar'
+
 const UserInfo = (props) =>{
     return(
-        <div className="Message" style={styles.message}>
-        <div
-          className="Avatar"
-        ></div>
-        <div className="details" style={styles.messageDetails}>
-          <div className="Metadata">
-            <div className="user">{props.message.userName}</div>
-            <div className="time">4:20 PM</div>
-          </div>
-          <div className="body">
-            : {props.message.body}
-          </div>
+        <div className="UserInfo" style={styles.userInfo}>
+            <div className='Avatar' style={styles.userInfoAvatar}>
+                <Avatar />
+            </div>
+            <div className="user" style={styles.userInfoUser}>{props.user.userName}</div>
+            <a href="#">
+                <i class="fas fa-sign-out-alt"></i>
+            </a>
         </div>
-      </div>
     )
 }
 
 var styles = {
 
-    //.Message
-    message: {
-            display: "flex",
-            marginTop: "1rem",
-            padding: "0 1rem"
+  //.UserInfo
+    userInfo: {
+      marginBottom: "1rem",
+      display: "flex",
+      alignItems: "center"
     },
-    //.Message .details
-    messageDetails: {
-            flex: "1",
-            paddingLeft: "0.5rem"
-    }
-}
+  //.UserInfo .Avatar
+      userInfoAvatar: {
+          marginRight: "0.5rem"
+      },
+  //.UserInfo .user
+      userInfoUser: {
+          flex: "1"
+      },
+  //.UserInfo a
+      userInfoA: {
+          border: "0",
+          padding: "0",
+          backgroundColor: "transparent",
+          color: "rgba(255, 255, 255, 0.6)",
+          fontSize: "1.2rem",
+          transition: "color 0.25s ease-out"
+      },
+  //.UserInfo a:hover
+      userInfoaHover: {
+          color: "white"
+      }
+  }
 
 export default UserInfo
